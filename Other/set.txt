@@ -1,0 +1,11 @@
+servers:server.xml
+
+<!-- path 是 映射路径 -->			
+<Context docBase="C:/photo" path="/upload" reloadable="true" source="org.eclipse.jst.jee.server:Cinema"/>
+<Context docBase="C:/photo/plate" path="/uploadPlate" reloadable="true" source="org.eclipse.jst.jee.server:Cinema"/>
+<Context docBase="C:/photo/video" path="/uploadVideo" reloadable="true" source="org.eclipse.jst.jee.server:Cinema"/>
+<Context docBase="C:/photo/description" path="/uploadDescription" reloadable="true" source="org.eclipse.jst.jee.server:Cinema"/>
+<Context docBase="Cinema" path="/Cinema" reloadable="true" source="org.eclipse.jst.jee.server:Cinema"/></Host>
+<!-- contex指上下文，实际上就是一个web项目； path是虚拟目录，访问的时候用127.0.0.1:8080/welcom/*.jsp访问网页，welcome前面要加/;映射路径 
+docBase是网页实际存放位置的根目录，映射为path虚拟目录； reloadable="true"表示你修改了jsp文件后不需要重启就可以实现显示的同步。 
+tomcat重新启动时，工程是否重新部署 -->
