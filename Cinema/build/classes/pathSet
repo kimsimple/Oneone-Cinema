@@ -1,0 +1,4 @@
+<Context docBase="F:/photo" path="/upload" reloadable="true" source="org.eclipse.jst.jee.server:Cinema"/>
+<Context docBase="F:/photo/plate" path="/uploadPlate" reloadable="true" source="org.eclipse.jst.jee.server:Cinema"/>
+<Context docBase="F:/photo/video" path="/uploadVideo" reloadable="true" source="org.eclipse.jst.jee.server:Cinema"/>
+<Context docBase="Cinema" path="/Cinema" reloadable="true" source="org.eclipse.jst.jee.server:Cinema"/>
